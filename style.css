@@ -1,22 +1,19 @@
 #app {
   height: 300px;
   width: 500px;
+  display: grid;
+  grid-template-columns: [begin] 15% [mid] 61% [third] 24% [end];
+  grid-template-rows: 20% 40% 40%;
+
 }
 
 #header {
+  grid-column: begin / end;
   background-color: #9BCE1D;
-}
-
-#main {
-  background-color: #F7F5D8
 }
 
 #article-1 {
   background-color: lightcoral;
-}
-
-#article-2 {
-  background-color: violet;
 }
 
 #nav {
@@ -28,5 +25,6 @@
 }
 
 #footer {
+  grid-column: begin / end;
   background-color: #9BCE1D;
 }
